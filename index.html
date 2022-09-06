@@ -9,28 +9,30 @@
   
   <title>Frontend Mentor | Product preview card component</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/07e0af658d.css">
     <script src="https://kit.fontawesome.com/87155f9288.js" crossorigin="anonymous"></script>
     </head>
     <body>
-    <div class="container">
+    <div class="container" role="baseContainer">
         
-        <div class="product-box">
+        <div class="product-box" role="productCard">
            
-                <div class="product-image">
-                    <img class="desktop-img" src="img/image-product-desktop.jpg" alt="" >
-                    <img class="mobile-img" src="img/image-product-mobile.jpg" alt="" >
+                <div class="product-image" role="productImages">
+                    <img class="desktop-img" src="img/image-product-desktop.jpg" alt="Poduct image" role="desktopImage">
+                    <img class="mobile-img" src="img/image-product-mobile.jpg" alt="product mage" role="mobileImage">
 
                 </div>
-                <div class="product-description">
+                <div class="product-description" role="productInfos">
                     <div class="description-body">
                     <p class="box-head_text">perfume</p>
-                    <h1 class="product-title">Gabrielle Essence Eau De Parfum</h1>
+                    <h1 class="product-title" role="peoductTitle">Gabrielle Essence Eau De Parfum</h1>
                     <p>  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
                         Perfumer-Creator for the House of CHANEL.</p>
                     </div>
-                <div class="description-footer">
+                <div class="description-footer" role="productOrder">
                         <div class="price-box">
                         
                             <p class="price">
@@ -38,7 +40,7 @@
                                 <span class="original-price">$169.99</span>
                             </p>
                         </div>
-                        <button class="btn-cart"><i class="fa-solid fa-cart-arrow-down"></i>Add to Cart</button>
+                        <button class="btn-cart" role="orderProduct"><i class="fa-solid fa-cart-arrow-down"></i>Add to Cart</button>
                 </div>
             </div>
             
